@@ -31,7 +31,7 @@
                                 <color key="textColor" red="1" green="0.052835087840000003" blue="0.1492784741" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOV-k5-VZi">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOV-k5-VZi">
                                 <rect key="frame" x="274" y="326" width="52" height="39"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <state key="normal" title="Spin" backgroundImage="whiteButton">
@@ -83,8 +83,61 @@
                                     <outlet property="delegate" destination="vVs-Zn-1G7" id="qi8-dW-xOq"/>
                                 </connections>
                             </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wPm-Le-tZf">
+                                <rect key="frame" x="204" y="266" width="54" height="39"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="Hold" backgroundImage="whiteButton"/>
+                                <state key="highlighted" backgroundImage="blueButton">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wWi-Oh-VV4">
+                                <rect key="frame" x="20" y="266" width="115" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Anv-oR-2hz"/>
+                                    <constraint firstAttribute="width" constant="115" id="xKl-L4-hNe"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="xKl-L4-hNe"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qL4-G4-RfB">
+                                <rect key="frame" x="342" y="266" width="54" height="39"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="Hold" backgroundImage="whiteButton"/>
+                                <state key="highlighted" backgroundImage="blueButton">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DcV-xc-B1R">
+                                <rect key="frame" x="411" y="266" width="54" height="39"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="Hold" backgroundImage="whiteButton"/>
+                                <state key="highlighted" backgroundImage="blueButton">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t0E-ee-0KK">
+                                <rect key="frame" x="273" y="266" width="54" height="39"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="Hold" backgroundImage="whiteButton"/>
+                                <state key="highlighted" backgroundImage="blueButton">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qdt-rc-D2Q">
+                                <rect key="frame" x="135" y="266" width="54" height="39"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="Hold" backgroundImage="whiteButton"/>
+                                <state key="highlighted" backgroundImage="blueButton">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U43-8n-C6N">
-                                <rect key="frame" x="279" y="266" width="43" height="39"/>
+                                <rect key="frame" x="279" y="355" width="43" height="39"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <state key="normal" title="Roll" backgroundImage="whiteButton"/>
                                 <state key="highlighted" backgroundImage="blueButton"/>
@@ -92,13 +145,44 @@
                                     <action selector="spin:" destination="vVs-Zn-1G7" eventType="touchUpInside" id="g4P-sZ-ZQG"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pdu-fH-4NK">
+                                <rect key="frame" x="465" y="266" width="115" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="115" id="PTk-QX-BmC"/>
+                                    <constraint firstAttribute="height" constant="40" id="iLM-Kg-9fE"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="PTk-QX-BmC"/>
+                                    </mask>
+                                </variation>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="wPm-Le-tZf" firstAttribute="leading" secondItem="qdt-rc-D2Q" secondAttribute="trailing" constant="15" id="4O7-Iv-PG8"/>
                             <constraint firstItem="QZk-M4-KFE" firstAttribute="top" secondItem="mmH-LF-5he" secondAttribute="topMargin" id="6p7-2s-ALW"/>
                             <constraint firstItem="U43-8n-C6N" firstAttribute="centerX" secondItem="mmH-LF-5he" secondAttribute="centerX" id="9zt-hl-HjG"/>
-                            <constraint firstItem="U43-8n-C6N" firstAttribute="top" secondItem="QZk-M4-KFE" secondAttribute="bottom" constant="50" id="JFL-A2-793"/>
+                            <constraint firstItem="t0E-ee-0KK" firstAttribute="centerY" secondItem="wWi-Oh-VV4" secondAttribute="centerY" id="C6B-PK-BlK"/>
+                            <constraint firstItem="pdu-fH-4NK" firstAttribute="trailing" secondItem="mmH-LF-5he" secondAttribute="trailingMargin" id="CEo-0o-qaR"/>
+                            <constraint firstItem="t0E-ee-0KK" firstAttribute="centerY" secondItem="wWi-Oh-VV4" secondAttribute="centerY" id="GeM-uW-vcw"/>
+                            <constraint firstItem="U43-8n-C6N" firstAttribute="top" secondItem="t0E-ee-0KK" secondAttribute="bottom" constant="50" id="LLO-Dg-3GD"/>
+                            <constraint firstItem="DcV-xc-B1R" firstAttribute="leading" secondItem="qL4-G4-RfB" secondAttribute="trailing" constant="15" id="PK2-TD-MgN"/>
+                            <constraint firstItem="pdu-fH-4NK" firstAttribute="centerY" secondItem="t0E-ee-0KK" secondAttribute="centerY" id="RBu-Cd-YGj"/>
+                            <constraint firstItem="wWi-Oh-VV4" firstAttribute="leading" secondItem="mmH-LF-5he" secondAttribute="leadingMargin" id="RzB-Kv-oyf"/>
+                            <constraint firstItem="qdt-rc-D2Q" firstAttribute="leading" secondItem="wWi-Oh-VV4" secondAttribute="trailing" id="Y9T-jM-kwO"/>
+                            <constraint firstItem="t0E-ee-0KK" firstAttribute="top" secondItem="QZk-M4-KFE" secondAttribute="bottom" constant="50" id="YJT-if-6IN"/>
+                            <constraint firstItem="pdu-fH-4NK" firstAttribute="leading" secondItem="DcV-xc-B1R" secondAttribute="trailing" id="Yri-16-UqB"/>
                             <constraint firstItem="QZk-M4-KFE" firstAttribute="centerX" secondItem="mmH-LF-5he" secondAttribute="centerX" id="dYU-1C-oAU"/>
+                            <constraint firstItem="DcV-xc-B1R" firstAttribute="centerY" secondItem="qdt-rc-D2Q" secondAttribute="centerY" id="gji-ku-JX5"/>
+                            <constraint firstItem="pdu-fH-4NK" firstAttribute="width" secondItem="wWi-Oh-VV4" secondAttribute="width" id="hQG-EX-Axv"/>
+                            <constraint firstItem="qL4-G4-RfB" firstAttribute="centerY" secondItem="qdt-rc-D2Q" secondAttribute="centerY" id="jpW-2d-BWY"/>
+                            <constraint firstItem="qL4-G4-RfB" firstAttribute="leading" secondItem="t0E-ee-0KK" secondAttribute="trailing" constant="15" id="s8O-yg-kBO"/>
+                            <constraint firstItem="t0E-ee-0KK" firstAttribute="centerY" secondItem="qdt-rc-D2Q" secondAttribute="centerY" id="tb5-nK-iC6"/>
+                            <constraint firstItem="wPm-Le-tZf" firstAttribute="centerY" secondItem="qdt-rc-D2Q" secondAttribute="centerY" id="vBO-ae-Xhi"/>
+                            <constraint firstItem="pdu-fH-4NK" firstAttribute="height" secondItem="wWi-Oh-VV4" secondAttribute="height" id="vhT-n2-mg5"/>
+                            <constraint firstItem="t0E-ee-0KK" firstAttribute="leading" secondItem="wPm-Le-tZf" secondAttribute="trailing" constant="15" id="zx4-qL-YUJ"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Yahtzee" image="Yahtzee" id="lO6-5W-QtZ"/>
@@ -129,7 +213,7 @@
                                     <outlet property="delegate" destination="8rJ-Kc-sve" id="LrG-Z1-qll"/>
                                 </connections>
                             </pickerView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GJf-pG-9aP">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GJf-pG-9aP">
                                 <rect key="frame" x="279" y="276" width="43" height="39"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <state key="normal" title="Roll" backgroundImage="whiteButton"/>
@@ -177,7 +261,7 @@
                                     <outlet property="delegate" destination="xHi-Im-czo" id="1gE-sy-k7b"/>
                                 </connections>
                             </pickerView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m8B-BJ-Rhd">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m8B-BJ-Rhd">
                                 <rect key="frame" x="279" y="266" width="43" height="39"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <state key="normal" title="Roll" backgroundImage="whiteButton">
@@ -240,8 +324,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qDv-pC-gqA">
+                                <rect key="frame" x="140" y="0.0" width="320" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="X73-MY-Hdk" id="pBJ-be-5zT"/>
+                                    <outlet property="delegate" destination="X73-MY-Hdk" id="WsI-gA-VPv"/>
+                                </connections>
+                            </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g8e-dn-z3y">
-                                <rect key="frame" x="274" y="266" width="52" height="39"/>
+                                <rect key="frame" x="274" y="355" width="52" height="39"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <state key="normal" title="Deal" backgroundImage="whiteButton"/>
                                 <state key="highlighted" backgroundImage="blueButton">
@@ -251,20 +342,94 @@
                                     <action selector="spin:" destination="X73-MY-Hdk" eventType="touchUpInside" id="Gt9-MW-QfZ"/>
                                 </connections>
                             </button>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qDv-pC-gqA">
-                                <rect key="frame" x="140" y="0.0" width="320" height="216"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8iN-n6-WVy">
+                                <rect key="frame" x="135" y="267" width="54" height="39"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="Hold" backgroundImage="whiteButton"/>
+                                <state key="highlighted" backgroundImage="blueButton">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
-                                    <outlet property="dataSource" destination="X73-MY-Hdk" id="pBJ-be-5zT"/>
-                                    <outlet property="delegate" destination="X73-MY-Hdk" id="WsI-gA-VPv"/>
+                                    <action selector="oneHold:" destination="X73-MY-Hdk" eventType="touchUpInside" id="Gei-Vh-3cV"/>
                                 </connections>
-                            </pickerView>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qpI-OP-AnO">
+                                <rect key="frame" x="411" y="267" width="54" height="39"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="Hold" backgroundImage="whiteButton"/>
+                                <state key="highlighted" backgroundImage="blueButton">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="fiveHold:" destination="X73-MY-Hdk" eventType="touchUpInside" id="Id2-eg-GY9"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ETw-jf-fv8">
+                                <rect key="frame" x="465" y="286" width="115" height="0.0"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NO5-W7-5FB">
+                                <rect key="frame" x="20" y="286" width="115" height="0.0"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPv-a6-8B2">
+                                <rect key="frame" x="204" y="266" width="54" height="39"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="Hold" backgroundImage="whiteButton"/>
+                                <state key="highlighted" backgroundImage="blueButton">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="twoHold:" destination="X73-MY-Hdk" eventType="touchUpInside" id="op5-1Z-DIN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rjY-rl-Nfn">
+                                <rect key="frame" x="273" y="266" width="54" height="39"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="Hold" backgroundImage="whiteButton"/>
+                                <state key="highlighted" backgroundImage="blueButton">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="threeHold:" destination="X73-MY-Hdk" eventType="touchUpInside" id="pgR-OI-RmY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gV7-Ps-I0A">
+                                <rect key="frame" x="342" y="266" width="54" height="39"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="Hold" backgroundImage="whiteButton"/>
+                                <state key="highlighted" backgroundImage="blueButton">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="fourHold:" destination="X73-MY-Hdk" eventType="touchUpInside" id="dmZ-o5-Cna"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="g8e-dn-z3y" firstAttribute="top" secondItem="qDv-pC-gqA" secondAttribute="bottom" constant="50" id="IA7-wr-f5v"/>
+                            <constraint firstItem="rjY-rl-Nfn" firstAttribute="centerX" secondItem="ZnZ-dH-Z6c" secondAttribute="centerX" id="0tM-vv-rYD"/>
+                            <constraint firstItem="ETw-jf-fv8" firstAttribute="width" secondItem="NO5-W7-5FB" secondAttribute="width" id="4Nl-gY-kM6"/>
+                            <constraint firstItem="ETw-jf-fv8" firstAttribute="height" secondItem="NO5-W7-5FB" secondAttribute="height" id="4gn-Rn-8As"/>
+                            <constraint firstItem="rjY-rl-Nfn" firstAttribute="centerY" secondItem="NO5-W7-5FB" secondAttribute="centerY" id="4gv-9a-ZXG"/>
+                            <constraint firstItem="8iN-n6-WVy" firstAttribute="centerY" secondItem="NO5-W7-5FB" secondAttribute="centerY" id="5lx-Br-tq3"/>
+                            <constraint firstItem="cPv-a6-8B2" firstAttribute="leading" secondItem="8iN-n6-WVy" secondAttribute="trailing" constant="15" id="7La-jx-qOa"/>
+                            <constraint firstItem="gV7-Ps-I0A" firstAttribute="leading" secondItem="rjY-rl-Nfn" secondAttribute="trailing" constant="15" id="7gF-Z9-XkQ"/>
+                            <constraint firstItem="qpI-OP-AnO" firstAttribute="leading" secondItem="gV7-Ps-I0A" secondAttribute="trailing" constant="15" id="9zc-5C-ypG"/>
+                            <constraint firstItem="NO5-W7-5FB" firstAttribute="leading" secondItem="ZnZ-dH-Z6c" secondAttribute="leadingMargin" id="DY7-nk-mbY"/>
                             <constraint firstItem="qDv-pC-gqA" firstAttribute="top" secondItem="ZnZ-dH-Z6c" secondAttribute="topMargin" id="Nbf-XF-2Fw"/>
-                            <constraint firstItem="g8e-dn-z3y" firstAttribute="centerX" secondItem="ZnZ-dH-Z6c" secondAttribute="centerX" id="lHn-nz-vzk"/>
+                            <constraint firstItem="ETw-jf-fv8" firstAttribute="leading" secondItem="qpI-OP-AnO" secondAttribute="trailing" id="W0A-tf-sPY"/>
+                            <constraint firstItem="8iN-n6-WVy" firstAttribute="leading" secondItem="NO5-W7-5FB" secondAttribute="trailing" id="g11-FQ-jRQ"/>
+                            <constraint firstItem="gV7-Ps-I0A" firstAttribute="centerY" secondItem="NO5-W7-5FB" secondAttribute="centerY" id="hB8-qx-yZI"/>
+                            <constraint firstItem="g8e-dn-z3y" firstAttribute="centerX" secondItem="ZnZ-dH-Z6c" secondAttribute="centerX" id="hnP-V8-Lxh"/>
+                            <constraint firstItem="cPv-a6-8B2" firstAttribute="centerY" secondItem="NO5-W7-5FB" secondAttribute="centerY" id="jgq-PJ-cV0"/>
+                            <constraint firstItem="ETw-jf-fv8" firstAttribute="trailing" secondItem="ZnZ-dH-Z6c" secondAttribute="trailingMargin" id="mQk-0O-6iK"/>
+                            <constraint firstItem="rjY-rl-Nfn" firstAttribute="leading" secondItem="cPv-a6-8B2" secondAttribute="trailing" constant="15" id="mme-iY-m4t"/>
+                            <constraint firstItem="qpI-OP-AnO" firstAttribute="centerY" secondItem="NO5-W7-5FB" secondAttribute="centerY" id="nFF-oO-xdv"/>
+                            <constraint firstItem="g8e-dn-z3y" firstAttribute="top" secondItem="rjY-rl-Nfn" secondAttribute="bottom" constant="50" id="pfv-pm-X8k"/>
+                            <constraint firstItem="rjY-rl-Nfn" firstAttribute="top" secondItem="qDv-pC-gqA" secondAttribute="bottom" constant="50" id="qMS-Uf-8O6"/>
                             <constraint firstItem="qDv-pC-gqA" firstAttribute="centerX" secondItem="ZnZ-dH-Z6c" secondAttribute="centerX" id="s16-q0-tmk"/>
+                            <constraint firstItem="ETw-jf-fv8" firstAttribute="centerY" secondItem="NO5-W7-5FB" secondAttribute="centerY" id="uH8-gI-Q5m"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="5 Card Stud" image="Stud" id="YIT-m8-ruZ"/>

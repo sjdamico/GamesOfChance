@@ -45,6 +45,17 @@ class FiveCardStudViewController: UIViewController {
             fivePicker.reloadComponent(i)
         }
     }
+    @IBAction func oneHold(sender: AnyObject) {
+    }
+    @IBAction func twoHold(sender: AnyObject) {
+    }
+    @IBAction func threeHold(sender: AnyObject) {
+    }
+    @IBAction func fourHold(sender: AnyObject) {
+    }
+    
+    @IBAction func fiveHold(sender: AnyObject) {
+    }
     
     // MARK:-
     // MARK: Picker Data Source Methods
