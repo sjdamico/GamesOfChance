@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Slots-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController title="Slots" id="9pv-A4-QxB" customClass="SlotsViewController" customModule="Games_of_Chance" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
+                        <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aN7-7T-ccC">
+                                <rect key="frame" x="140" y="0.0" width="320" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="9pv-A4-QxB" id="ohw-As-T5R"/>
+                                    <outlet property="delegate" destination="9pv-A4-QxB" id="amY-ne-Kxd"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OBI-1u-5WM">
+                                <rect key="frame" x="300" y="252" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="48"/>
+                                <color key="textColor" red="1" green="0.052835087840000003" blue="0.1492784741" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOV-k5-VZi">
+                                <rect key="frame" x="274" y="326" width="52" height="39"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="Spin" backgroundImage="whiteButton">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="blueButton"/>
+                                <connections>
+                                    <action selector="spin:" destination="9pv-A4-QxB" eventType="touchUpInside" id="7y6-Cg-gUD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OBI-1u-5WM" firstAttribute="top" secondItem="aN7-7T-ccC" secondAttribute="bottom" constant="36" id="3bc-or-b3t"/>
+                            <constraint firstItem="aN7-7T-ccC" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="topMargin" id="4ev-J3-pUs"/>
+                            <constraint firstItem="MOV-k5-VZi" firstAttribute="top" secondItem="OBI-1u-5WM" secondAttribute="bottom" constant="74" id="c72-jP-Yj2"/>
+                            <constraint firstItem="MOV-k5-VZi" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="eJy-Dm-Bc2"/>
+                            <constraint firstItem="OBI-1u-5WM" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="rAQ-Zy-Rrw"/>
+                            <constraint firstItem="aN7-7T-ccC" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="wF1-o5-O0e"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Slots" image="Slots" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="button" destination="MOV-k5-VZi" id="4v6-NT-Ld8"/>
+                        <outlet property="picker" destination="aN7-7T-ccC" id="DRk-9i-wkP"/>
+                        <outlet property="winLabel" destination="OBI-1u-5WM" id="rI9-8I-9qh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="98" y="-791"/>
+        </scene>
+        <!--Yahtzee-->
+        <scene sceneID="IwG-OM-fH9">
+            <objects>
+                <viewController title="Yahtzee" id="vVs-Zn-1G7" customClass="YahtzeeViewController" customModule="Games_of_Chance" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kWs-JD-80J"/>
+                        <viewControllerLayoutGuide type="bottom" id="Jd4-Wn-7EC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mmH-LF-5he">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QZk-M4-KFE">
+                                <rect key="frame" x="140" y="0.0" width="320" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="vVs-Zn-1G7" id="kLW-dj-0Hr"/>
+                                    <outlet property="delegate" destination="vVs-Zn-1G7" id="qi8-dW-xOq"/>
+                                </connections>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U43-8n-C6N">
+                                <rect key="frame" x="279" y="266" width="43" height="39"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="Roll" backgroundImage="whiteButton"/>
+                                <state key="highlighted" backgroundImage="blueButton"/>
+                                <connections>
+                                    <action selector="spin:" destination="vVs-Zn-1G7" eventType="touchUpInside" id="g4P-sZ-ZQG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QZk-M4-KFE" firstAttribute="top" secondItem="mmH-LF-5he" secondAttribute="topMargin" id="6p7-2s-ALW"/>
+                            <constraint firstItem="U43-8n-C6N" firstAttribute="centerX" secondItem="mmH-LF-5he" secondAttribute="centerX" id="9zt-hl-HjG"/>
+                            <constraint firstItem="U43-8n-C6N" firstAttribute="top" secondItem="QZk-M4-KFE" secondAttribute="bottom" constant="50" id="JFL-A2-793"/>
+                            <constraint firstItem="QZk-M4-KFE" firstAttribute="centerX" secondItem="mmH-LF-5he" secondAttribute="centerX" id="dYU-1C-oAU"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Yahtzee" image="Yahtzee" id="lO6-5W-QtZ"/>
+                    <connections>
+                        <outlet property="fivePicker" destination="QZk-M4-KFE" id="8ru-6w-pxr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="huc-oW-VAh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="832" y="-770"/>
+        </scene>
+        <!--Magic 8 Ball-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController title="Magic 8 Ball" id="8rJ-Kc-sve" customClass="MagicEightBallViewController" customModule="Games_of_Chance" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
+                        <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a8N-nk-Jij">
+                                <rect key="frame" x="140" y="20" width="320" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="8rJ-Kc-sve" id="hcw-3p-Vlw"/>
+                                    <outlet property="delegate" destination="8rJ-Kc-sve" id="LrG-Z1-qll"/>
+                                </connections>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GJf-pG-9aP">
+                                <rect key="frame" x="279" y="276" width="43" height="39"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="Roll" backgroundImage="whiteButton"/>
+                                <state key="highlighted" backgroundImage="blueButton">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="spin:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="6gf-xB-aNU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GJf-pG-9aP" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="1pN-SZ-5Rw"/>
+                            <constraint firstItem="a8N-nk-Jij" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" id="Eid-Mi-mJ9"/>
+                            <constraint firstItem="GJf-pG-9aP" firstAttribute="top" secondItem="a8N-nk-Jij" secondAttribute="bottom" constant="40" id="trH-L8-bdt"/>
+                            <constraint firstItem="a8N-nk-Jij" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="zXl-nB-EX7"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Magic 8 Ball" image="8Ball" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="singlePicker" destination="a8N-nk-Jij" id="68y-LJ-FsP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="578" y="882"/>
+        </scene>
+        <!--Seven Eleven-->
+        <scene sceneID="AZk-YV-U4t">
+            <objects>
+                <viewController title="Seven Eleven" id="xHi-Im-czo" customClass="SevenElevenViewController" customModule="Games_of_Chance" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Kuc-dI-V0q"/>
+                        <viewControllerLayoutGuide type="bottom" id="u3A-df-O2F"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yGB-ty-dWU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="APW-vo-6bl">
+                                <rect key="frame" x="140" y="0.0" width="320" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="xHi-Im-czo" id="viU-vg-xOv"/>
+                                    <outlet property="delegate" destination="xHi-Im-czo" id="1gE-sy-k7b"/>
+                                </connections>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m8B-BJ-Rhd">
+                                <rect key="frame" x="279" y="266" width="43" height="39"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="Roll" backgroundImage="whiteButton">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="blueButton"/>
+                                <connections>
+                                    <action selector="spin:" destination="xHi-Im-czo" eventType="touchUpInside" id="o5g-oH-ycA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="APW-vo-6bl" firstAttribute="centerX" secondItem="yGB-ty-dWU" secondAttribute="centerX" id="5oh-sy-Ahf"/>
+                            <constraint firstItem="APW-vo-6bl" firstAttribute="top" secondItem="yGB-ty-dWU" secondAttribute="topMargin" id="7Ox-M7-TcH"/>
+                            <constraint firstItem="m8B-BJ-Rhd" firstAttribute="top" secondItem="APW-vo-6bl" secondAttribute="bottom" constant="50" id="GMD-PI-lJR"/>
+                            <constraint firstItem="m8B-BJ-Rhd" firstAttribute="centerX" secondItem="yGB-ty-dWU" secondAttribute="centerX" id="eOK-3u-gYO"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Seven Eleven" image="Dice" id="FtX-W2-Ge5"/>
+                    <connections>
+                        <outlet property="dualPicker" destination="APW-vo-6bl" id="y8U-c5-jlo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0qg-5n-ajD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-57" y="804"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="xHi-Im-czo" kind="relationship" relationship="viewControllers" id="Ija-nt-sGy"/>
+                        <segue destination="vVs-Zn-1G7" kind="relationship" relationship="viewControllers" id="NRF-om-aMV"/>
+                        <segue destination="X73-MY-Hdk" kind="relationship" relationship="viewControllers" id="65C-TU-94g"/>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="82" y="-96"/>
+        </scene>
+        <!--Five Card Stud-->
+        <scene sceneID="oKu-1W-IQs">
+            <objects>
+                <viewController title="Five Card Stud" id="X73-MY-Hdk" customClass="FiveCardStudViewController" customModule="Games_of_Chance" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jng-fa-qSu"/>
+                        <viewControllerLayoutGuide type="bottom" id="fXS-XX-si1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZnZ-dH-Z6c">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g8e-dn-z3y">
+                                <rect key="frame" x="274" y="266" width="52" height="39"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="Deal" backgroundImage="whiteButton"/>
+                                <state key="highlighted" backgroundImage="blueButton">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="spin:" destination="X73-MY-Hdk" eventType="touchUpInside" id="Gt9-MW-QfZ"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qDv-pC-gqA">
+                                <rect key="frame" x="140" y="0.0" width="320" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="X73-MY-Hdk" id="pBJ-be-5zT"/>
+                                    <outlet property="delegate" destination="X73-MY-Hdk" id="WsI-gA-VPv"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="g8e-dn-z3y" firstAttribute="top" secondItem="qDv-pC-gqA" secondAttribute="bottom" constant="50" id="IA7-wr-f5v"/>
+                            <constraint firstItem="qDv-pC-gqA" firstAttribute="top" secondItem="ZnZ-dH-Z6c" secondAttribute="topMargin" id="Nbf-XF-2Fw"/>
+                            <constraint firstItem="g8e-dn-z3y" firstAttribute="centerX" secondItem="ZnZ-dH-Z6c" secondAttribute="centerX" id="lHn-nz-vzk"/>
+                            <constraint firstItem="qDv-pC-gqA" firstAttribute="centerX" secondItem="ZnZ-dH-Z6c" secondAttribute="centerX" id="s16-q0-tmk"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="5 Card Stud" image="Stud" id="YIT-m8-ruZ"/>
+                    <connections>
+                        <outlet property="fivePicker" destination="qDv-pC-gqA" id="QeP-Pt-SAB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qgi-uq-PIF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="842" y="0.0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="8Ball" width="24" height="24"/>
+        <image name="Dice" width="24" height="24"/>
+        <image name="Slots" width="24" height="14"/>
+        <image name="Stud" width="24" height="18"/>
+        <image name="Yahtzee" width="24" height="15"/>
+        <image name="blueButton" width="29" height="38"/>
+        <image name="whiteButton" width="29" height="39"/>
+    </resources>
+</document>

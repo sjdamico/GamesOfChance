@@ -1,0 +1,534 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BCC8145A1C826ED00017C4FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC814591C826ED00017C4FE /* AppDelegate.swift */; };
+		BCC814611C826ED00017C4FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCC8145F1C826ED00017C4FE /* Main.storyboard */; };
+		BCC814631C826ED00017C4FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCC814621C826ED00017C4FE /* Assets.xcassets */; };
+		BCC814661C826ED00017C4FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCC814641C826ED00017C4FE /* LaunchScreen.storyboard */; };
+		BCC814711C826ED00017C4FE /* Games_of_ChanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC814701C826ED00017C4FE /* Games_of_ChanceTests.swift */; };
+		BCC8147C1C826ED00017C4FE /* Games_of_ChanceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8147B1C826ED00017C4FE /* Games_of_ChanceUITests.swift */; };
+		BCC8148A1C82A5430017C4FE /* MagicEightBallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC814891C82A5430017C4FE /* MagicEightBallViewController.swift */; };
+		BCC8148C1C82A5740017C4FE /* SevenElevenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8148B1C82A5740017C4FE /* SevenElevenViewController.swift */; };
+		BCC8148E1C82A59A0017C4FE /* YahtzeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8148D1C82A59A0017C4FE /* YahtzeeViewController.swift */; };
+		BCC814901C82A5BE0017C4FE /* FiveCardStudViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8148F1C82A5BE0017C4FE /* FiveCardStudViewController.swift */; };
+		BCC814921C82A5D70017C4FE /* SlotsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC814911C82A5D70017C4FE /* SlotsViewController.swift */; };
+		BCC814951C82CD010017C4FE /* crunch.wav in Resources */ = {isa = PBXBuildFile; fileRef = BCC814931C82CD010017C4FE /* crunch.wav */; };
+		BCC814961C82CD010017C4FE /* win.wav in Resources */ = {isa = PBXBuildFile; fileRef = BCC814941C82CD010017C4FE /* win.wav */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BCC8146D1C826ED00017C4FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCC8144E1C826ED00017C4FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCC814551C826ED00017C4FE;
+			remoteInfo = "Games of Chance";
+		};
+		BCC814781C826ED00017C4FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCC8144E1C826ED00017C4FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCC814551C826ED00017C4FE;
+			remoteInfo = "Games of Chance";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BCC814561C826ED00017C4FE /* Games of Chance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Games of Chance.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCC814591C826ED00017C4FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BCC814601C826ED00017C4FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BCC814621C826ED00017C4FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BCC814651C826ED00017C4FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BCC814671C826ED00017C4FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCC8146C1C826ED00017C4FE /* Games of ChanceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Games of ChanceTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCC814701C826ED00017C4FE /* Games_of_ChanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Games_of_ChanceTests.swift; sourceTree = "<group>"; };
+		BCC814721C826ED00017C4FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCC814771C826ED00017C4FE /* Games of ChanceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Games of ChanceUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCC8147B1C826ED00017C4FE /* Games_of_ChanceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Games_of_ChanceUITests.swift; sourceTree = "<group>"; };
+		BCC8147D1C826ED00017C4FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCC814891C82A5430017C4FE /* MagicEightBallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagicEightBallViewController.swift; sourceTree = "<group>"; };
+		BCC8148B1C82A5740017C4FE /* SevenElevenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SevenElevenViewController.swift; sourceTree = "<group>"; };
+		BCC8148D1C82A59A0017C4FE /* YahtzeeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YahtzeeViewController.swift; sourceTree = "<group>"; };
+		BCC8148F1C82A5BE0017C4FE /* FiveCardStudViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiveCardStudViewController.swift; sourceTree = "<group>"; };
+		BCC814911C82A5D70017C4FE /* SlotsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlotsViewController.swift; sourceTree = "<group>"; };
+		BCC814931C82CD010017C4FE /* crunch.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = crunch.wav; sourceTree = "<group>"; };
+		BCC814941C82CD010017C4FE /* win.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = win.wav; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BCC814531C826ED00017C4FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCC814691C826ED00017C4FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCC814741C826ED00017C4FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BCC8144D1C826ED00017C4FE = {
+			isa = PBXGroup;
+			children = (
+				BCC814581C826ED00017C4FE /* Games of Chance */,
+				BCC8146F1C826ED00017C4FE /* Games of ChanceTests */,
+				BCC8147A1C826ED00017C4FE /* Games of ChanceUITests */,
+				BCC814571C826ED00017C4FE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BCC814571C826ED00017C4FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BCC814561C826ED00017C4FE /* Games of Chance.app */,
+				BCC8146C1C826ED00017C4FE /* Games of ChanceTests.xctest */,
+				BCC814771C826ED00017C4FE /* Games of ChanceUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BCC814581C826ED00017C4FE /* Games of Chance */ = {
+			isa = PBXGroup;
+			children = (
+				BCC814931C82CD010017C4FE /* crunch.wav */,
+				BCC814941C82CD010017C4FE /* win.wav */,
+				BCC814591C826ED00017C4FE /* AppDelegate.swift */,
+				BCC8145F1C826ED00017C4FE /* Main.storyboard */,
+				BCC814621C826ED00017C4FE /* Assets.xcassets */,
+				BCC814641C826ED00017C4FE /* LaunchScreen.storyboard */,
+				BCC814671C826ED00017C4FE /* Info.plist */,
+				BCC814891C82A5430017C4FE /* MagicEightBallViewController.swift */,
+				BCC8148B1C82A5740017C4FE /* SevenElevenViewController.swift */,
+				BCC8148D1C82A59A0017C4FE /* YahtzeeViewController.swift */,
+				BCC8148F1C82A5BE0017C4FE /* FiveCardStudViewController.swift */,
+				BCC814911C82A5D70017C4FE /* SlotsViewController.swift */,
+			);
+			path = "Games of Chance";
+			sourceTree = "<group>";
+		};
+		BCC8146F1C826ED00017C4FE /* Games of ChanceTests */ = {
+			isa = PBXGroup;
+			children = (
+				BCC814701C826ED00017C4FE /* Games_of_ChanceTests.swift */,
+				BCC814721C826ED00017C4FE /* Info.plist */,
+			);
+			path = "Games of ChanceTests";
+			sourceTree = "<group>";
+		};
+		BCC8147A1C826ED00017C4FE /* Games of ChanceUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BCC8147B1C826ED00017C4FE /* Games_of_ChanceUITests.swift */,
+				BCC8147D1C826ED00017C4FE /* Info.plist */,
+			);
+			path = "Games of ChanceUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BCC814551C826ED00017C4FE /* Games of Chance */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCC814801C826ED00017C4FE /* Build configuration list for PBXNativeTarget "Games of Chance" */;
+			buildPhases = (
+				BCC814521C826ED00017C4FE /* Sources */,
+				BCC814531C826ED00017C4FE /* Frameworks */,
+				BCC814541C826ED00017C4FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Games of Chance";
+			productName = "Games of Chance";
+			productReference = BCC814561C826ED00017C4FE /* Games of Chance.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BCC8146B1C826ED00017C4FE /* Games of ChanceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCC814831C826ED00017C4FE /* Build configuration list for PBXNativeTarget "Games of ChanceTests" */;
+			buildPhases = (
+				BCC814681C826ED00017C4FE /* Sources */,
+				BCC814691C826ED00017C4FE /* Frameworks */,
+				BCC8146A1C826ED00017C4FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCC8146E1C826ED00017C4FE /* PBXTargetDependency */,
+			);
+			name = "Games of ChanceTests";
+			productName = "Games of ChanceTests";
+			productReference = BCC8146C1C826ED00017C4FE /* Games of ChanceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BCC814761C826ED00017C4FE /* Games of ChanceUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCC814861C826ED00017C4FE /* Build configuration list for PBXNativeTarget "Games of ChanceUITests" */;
+			buildPhases = (
+				BCC814731C826ED00017C4FE /* Sources */,
+				BCC814741C826ED00017C4FE /* Frameworks */,
+				BCC814751C826ED00017C4FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCC814791C826ED00017C4FE /* PBXTargetDependency */,
+			);
+			name = "Games of ChanceUITests";
+			productName = "Games of ChanceUITests";
+			productReference = BCC814771C826ED00017C4FE /* Games of ChanceUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BCC8144E1C826ED00017C4FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Steve D'Amico";
+				TargetAttributes = {
+					BCC814551C826ED00017C4FE = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					BCC8146B1C826ED00017C4FE = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = BCC814551C826ED00017C4FE;
+					};
+					BCC814761C826ED00017C4FE = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = BCC814551C826ED00017C4FE;
+					};
+				};
+			};
+			buildConfigurationList = BCC814511C826ED00017C4FE /* Build configuration list for PBXProject "Games of Chance" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BCC8144D1C826ED00017C4FE;
+			productRefGroup = BCC814571C826ED00017C4FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BCC814551C826ED00017C4FE /* Games of Chance */,
+				BCC8146B1C826ED00017C4FE /* Games of ChanceTests */,
+				BCC814761C826ED00017C4FE /* Games of ChanceUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BCC814541C826ED00017C4FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCC814661C826ED00017C4FE /* LaunchScreen.storyboard in Resources */,
+				BCC814951C82CD010017C4FE /* crunch.wav in Resources */,
+				BCC814631C826ED00017C4FE /* Assets.xcassets in Resources */,
+				BCC814961C82CD010017C4FE /* win.wav in Resources */,
+				BCC814611C826ED00017C4FE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCC8146A1C826ED00017C4FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCC814751C826ED00017C4FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BCC814521C826ED00017C4FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCC814921C82A5D70017C4FE /* SlotsViewController.swift in Sources */,
+				BCC814901C82A5BE0017C4FE /* FiveCardStudViewController.swift in Sources */,
+				BCC8148C1C82A5740017C4FE /* SevenElevenViewController.swift in Sources */,
+				BCC8148A1C82A5430017C4FE /* MagicEightBallViewController.swift in Sources */,
+				BCC8145A1C826ED00017C4FE /* AppDelegate.swift in Sources */,
+				BCC8148E1C82A59A0017C4FE /* YahtzeeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCC814681C826ED00017C4FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCC814711C826ED00017C4FE /* Games_of_ChanceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCC814731C826ED00017C4FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCC8147C1C826ED00017C4FE /* Games_of_ChanceUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BCC8146E1C826ED00017C4FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCC814551C826ED00017C4FE /* Games of Chance */;
+			targetProxy = BCC8146D1C826ED00017C4FE /* PBXContainerItemProxy */;
+		};
+		BCC814791C826ED00017C4FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCC814551C826ED00017C4FE /* Games of Chance */;
+			targetProxy = BCC814781C826ED00017C4FE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BCC8145F1C826ED00017C4FE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCC814601C826ED00017C4FE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BCC814641C826ED00017C4FE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCC814651C826ED00017C4FE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BCC8147E1C826ED00017C4FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BCC8147F1C826ED00017C4FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BCC814811C826ED00017C4FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Games of Chance/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CTMI.Games-of-Chance";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BCC814821C826ED00017C4FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Games of Chance/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CTMI.Games-of-Chance";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BCC814841C826ED00017C4FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Games of ChanceTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CTMI.Games-of-ChanceTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Games of Chance.app/Games of Chance";
+			};
+			name = Debug;
+		};
+		BCC814851C826ED00017C4FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Games of ChanceTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CTMI.Games-of-ChanceTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Games of Chance.app/Games of Chance";
+			};
+			name = Release;
+		};
+		BCC814871C826ED00017C4FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Games of ChanceUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CTMI.Games-of-ChanceUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Games of Chance";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		BCC814881C826ED00017C4FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Games of ChanceUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CTMI.Games-of-ChanceUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Games of Chance";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BCC814511C826ED00017C4FE /* Build configuration list for PBXProject "Games of Chance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCC8147E1C826ED00017C4FE /* Debug */,
+				BCC8147F1C826ED00017C4FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCC814801C826ED00017C4FE /* Build configuration list for PBXNativeTarget "Games of Chance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCC814811C826ED00017C4FE /* Debug */,
+				BCC814821C826ED00017C4FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCC814831C826ED00017C4FE /* Build configuration list for PBXNativeTarget "Games of ChanceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCC814841C826ED00017C4FE /* Debug */,
+				BCC814851C826ED00017C4FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCC814861C826ED00017C4FE /* Build configuration list for PBXNativeTarget "Games of ChanceUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCC814871C826ED00017C4FE /* Debug */,
+				BCC814881C826ED00017C4FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BCC8144E1C826ED00017C4FE /* Project object */;
+}
